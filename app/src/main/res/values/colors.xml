@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="scrollFundo">#EEEEEE</color>
+    <color name="empresa">#FF7043</color>
+    <color name="servico">#00d7c9</color>
+    <color name="cliente">#a2ca5d</color>
+    <color name="contato">#66BB6A</color>
+</resources>

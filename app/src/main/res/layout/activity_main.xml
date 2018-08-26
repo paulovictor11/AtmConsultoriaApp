@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo"
+        android:layout_marginTop="50dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgEmpresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_empresa"
+                android:contentDescription="@string/imgEmpresa"/>
+
+            <ImageView
+                android:id="@+id/imgServicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_servico"
+                android:contentDescription="@string/imgServicos"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/imgClientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_cliente"
+                android:contentDescription="@string/imgCliente"/>
+
+            <ImageView
+                android:id="@+id/imgContato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_contato"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:contentDescription="@string/imgContato"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/websistems"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+</RelativeLayout>

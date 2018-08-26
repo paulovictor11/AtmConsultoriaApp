@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ContatoActivity">
+
+    <TableLayout
+        android:id="@+id/tableContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detalhe_contato"
+                android:contentDescription="@string/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detlahes_contato"
+                android:textColor="@color/contato"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableContato">
+
+        <TableRow>
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/email"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/txtEmail"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/telefone"/>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/txtTelefone"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/celular"/>
+
+            <TextView
+                android:id="@+id/txtSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/txtCelular"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

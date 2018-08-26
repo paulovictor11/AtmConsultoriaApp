@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ClienteActivity">
+
+    <TableLayout
+        android:id="@+id/tableCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detalhe_cliente"
+                android:contentDescription="@string/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detlahes_cliente"
+                android:textColor="@color/cliente"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tableCliente"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cliente1"
+            android:contentDescription="@string/cliente1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cliente_sys"
+            android:textSize="15sp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cliente2"
+            android:contentDescription="@string/cliente2"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cliente_rsm"
+            android:textSize="15sp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dot"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
